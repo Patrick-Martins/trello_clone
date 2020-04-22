@@ -180,3 +180,24 @@ input.invalid + .invalid-message {
 button {
   cursor: pointer;
 }
+
+.move_modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: red;
+}
+
+.move_container {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin: 25%auto;
+  width: 50%;
+  height: 1fr;
+}
+
+.move_container button {
+  margin-bottom: 20px;
+}

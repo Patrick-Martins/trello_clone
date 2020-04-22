@@ -10,7 +10,7 @@
     <div class="loader hidden"></div>
     <button class="add-new">Add New Car</button>
    <main>
-     <section id="to_do" class="todo_board board">
+     <!-- <section id="to_do" class="todo_board board">
       <button class="add-new" data-boardName="to_do" data-boardID="5e9efd9ace33950d00002322">Add New Car</button>
        <h2>TO DO</h2>
         <div class="cards-container"></div>
@@ -24,7 +24,7 @@
         <button class="add-new" data-boardName="done" data-boardID="5e9efdcfce33950d0000232c">Add New Car</button>
         <h2>DONE</h2>
         <div class="cards-container"></div>
-      </section>
+      </section> -->
     </main>
     <div class="form-modal hidden">
       <p class="close_icon">&#x2716</p>
@@ -55,15 +55,16 @@
     </div>
 
 
-    <div class="move_modal">
+    <div class="move_modal hidden">
+      <p class="close_icon">&#x2716</p>
       <div class="move_container">
-        <button data-moveTo="to_do">To Do</button>
-        <button data-moveTo="doing">Doing</button>
-        <button data-moveTo="done">Done</button>
+        <!-- <button data-moveTo="to_do" data-boardID="5e9efd9ace33950d00002322">To Do</button>
+        <button data-moveTo="doing" data-boardID="5e9efdc3ce33950d0000232a">Doing</button>
+        <button data-moveTo="done" data-boardID="5e9efdcfce33950d0000232c">Done</button> -->
       </div>
     </div>
 
-    <template>
+    <template class="task_template">
       <article class="card">
         <div class="color"></div>
         <h2 class="title"><span></span></h2>
@@ -72,6 +73,14 @@
         <button class="changeCar">Change Car</button>
         <button class="moveCard">Move Car</button>
       </article>
+    </template>
+
+    <template class="board_template">
+      <section class="board">
+        <button class="add-new" data-boardName="done" data-boardID="5e9efdcfce33950d0000232c">Add New Card</button>
+        <h2></h2>
+        <div class="cards-container"></div>
+      </section>
     </template>
   </body>
   <script src="script.js"></script>
